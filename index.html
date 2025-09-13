@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TLP TECH - Tecnologia que Transforma Negócios</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<body class="gradient-bg">
+
+    <div id="cursor-glow"></div>
+
+    <header id="inicio"
+        class="py-2 px-4 md:px-8 sticky top-0 bg-white/80 backdrop-blur-md border-b border-violet-100 z-40">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#inicio" class="flex items-center space-x-2">
+                <img class="h-32 w-auto" 
+                     src="/img/ChatGPT Image 10 de set. de 2025, 21_48_42.png" 
+                     onerror="this.onerror=null;this.src='https://placehold.co/200x80/f5f3ff/312e81?text=TLP+TECH&font=montserrat';"
+                     alt="logo">
+            </a>
+            <nav class="hidden md:flex space-x-8 items-center text-indigo-900">
+                <a href="#servicos" class="hover:text-violet-600 transition-colors">Serviços</a>
+                <a href="#sobre" class="hover:text-violet-600 transition-colors">Sobre Nós</a>
+                <a href="#simulador" class="hover:text-violet-600 transition-colors">Orçamento</a>
+                <a href="#formulario"
+                    class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">Iniciar
+                    Projeto</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden z-50 p-2 rounded-md border border-violet-200/50 bg-white/20 hover:bg-violet-100 transition-colors">
+                <svg class="w-8 h-8 text-indigo-900" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div id="mobile-menu-overlay" class="fixed inset-0 bg-black/60 z-40 hidden md:hidden"></div>
+    
+    <div id="mobile-menu"
+        class="mobile-menu transform translate-x-full fixed top-0 right-0 h-full w-64 bg-white/95 backdrop-blur-lg p-8 md:hidden shadow-lg z-50">
+        <nav class="flex flex-col space-y-8 mt-16 text-lg text-indigo-900">
+            <a href="#servicos" class="mobile-link hover:text-violet-600 transition-colors">Serviços</a>
+            <a href="#sobre" class="mobile-link hover:text-violet-600 transition-colors">Sobre Nós</a>
+            <a href="#simulador" class="mobile-link hover:text-violet-600 transition-colors">Orçamento</a>
+            <a href="#formulario"
+                class="mobile-link bg-violet-600 hover:bg-violet-700 text-white font-bold py-2 px-4 rounded-lg transition-colors text-center">Iniciar
+                Projeto</a>
+        </nav>
+    </div>
+
+    <main>
+        <section class="min-h-screen relative flex items-center justify-center">
+            <div id="particles-js"></div>
+            <div class="text-center px-4 z-10">
+                <div data-aos="zoom-in" class="max-w-5xl">
+                    <h1 class="hero-title font-bold leading-tight tracking-tight">
+                        Tecnologia que Transforma<br>
+                        <span id="rotating-text-span" class="animated-gradient-text">Negócios</span>
+                    </h1>
+                    <p class="mt-6 text-lg md:text-xl text-muted max-w-2xl mx-auto">Criamos soluções digitais de alto
+                        impacto que automatizam processos, fortalecem marcas e impulsionam resultados.</p>
+                    <a href="#servicos"
+                        class="mt-8 inline-block bg-gradient-to-r from-violet-500 to-indigo-500 text-white font-bold py-3 px-8 rounded-lg glow-btn">
+                        Conheça Nossas Soluções
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicos" class="py-20 px-4 md:px-8">
+            <div class="container mx-auto text-center">
+                <h2 data-aos="zoom-in" class="font-bold mb-12">Nossas Soluções de Performance</h2>
+                <div class="max-w-4xl mx-auto space-y-4" id="services-accordion">
+                    <div data-aos="fade-up" class="service-accordion-item bg-white rounded-lg border border-violet-100 shadow-sm overflow-hidden">
+                        <button class="service-accordion-header flex justify-between items-center w-full p-6 text-left">
+                            <span class="flex items-center space-x-4">
+                                <svg class="w-8 h-8 text-violet-500 neon-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                                <h3 class="text-xl font-bold text-indigo-800">Automação de Respostas</h3>
+                            </span>
+                            <svg class="accordion-icon w-6 h-6 text-indigo-800 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                        </button>
+                        <div class="service-accordion-content">
+                            <p class="p-6 pt-0 text-muted text-left">Automatizamos respostas para agendamentos e dúvidas, otimizando o seu atendimento e garantindo que nenhum cliente fique sem resposta, 24 horas por dia.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="100" class="service-accordion-item bg-white rounded-lg border border-violet-100 shadow-sm overflow-hidden">
+                        <button class="service-accordion-header flex justify-between items-center w-full p-6 text-left">
+                            <span class="flex items-center space-x-4">
+                                <svg class="w-8 h-8 text-violet-500 neon-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                                <h3 class="text-xl font-bold text-indigo-800">Desenvolvimento de Sites</h3>
+                            </span>
+                            <svg class="accordion-icon w-6 h-6 text-indigo-800 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                        </button>
+                        <div class="service-accordion-content">
+                            <p class="p-6 pt-0 text-muted text-left">Construímos sites que não são apenas bonitos, mas verdadeiras máquinas de conversão. Focamos em performance, responsividade e uma experiência de usuário impecável.</p>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="200" class="service-accordion-item bg-white rounded-lg border border-violet-100 shadow-sm overflow-hidden">
+                        <button class="service-accordion-header flex justify-between items-center w-full p-6 text-left">
+                            <span class="flex items-center space-x-4">
+                                <svg class="w-8 h-8 text-violet-500 neon-icon flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
+                                <h3 class="text-xl font-bold text-indigo-800">Design e Identidade Visual</h3>
+                            </span>
+                            <svg class="accordion-icon w-6 h-6 text-indigo-800 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" /></svg>
+                        </button>
+                        <div class="service-accordion-content">
+                            <p class="p-6 pt-0 text-muted text-left">Criamos a cara da sua marca. Desenvolvemos logos, paletas de cores e todo o universo visual que tornará a sua empresa única, profissional e memorável.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="py-20 px-4 md:px-8 bg-violet-100/50">
+            <div class="container mx-auto text-center">
+                <h2 data-aos="zoom-in" class="font-bold mb-4">A Força por Trás do Código</h2>
+                <p data-aos="zoom-in" data-aos-delay="100" class="text-lg text-muted max-w-3xl mx-auto">
+                    A nossa equipa é movida por três pilares essenciais que garantem a excelência em cada projeto. Somos apaixonados por inovação, obcecados por qualidade técnica e comprometidos com o seu sucesso.
+                </p>
+                <div class="mt-12 grid md:grid-cols-3 gap-8">
+                    <div data-aos="fade-up" data-aos-delay="200" class="pillar-card text-center bg-white/50 p-6 rounded-xl">
+                        <div class="bg-violet-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border-2 border-violet-300">
+                             <svg class="w-10 h-10 text-violet-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 001.5-.189m-1.5.189a6.01 6.01 0 01-1.5-.189m3.75 7.478a12.06 12.06 0 01-4.5 0m3.75 2.311a7.5 7.5 0 01-7.5 0c-1.255 0-2.443.29-3.5.832M12 12V6.75a4.5 4.5 0 00-9 0v5.25m9-5.25a4.5 4.5 0 019 0v5.25m0-5.25a4.5 4.5 0 00-9 0" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-800">Paixão por Inovação</h3>
+                        <p class="text-muted mt-2 text-sm">Buscamos constantemente as tecnologias mais recentes e as melhores práticas para entregar soluções que não apenas resolvem problemas, mas que também encantam.</p>
+                    </div>
+                     <div data-aos="fade-up" data-aos-delay="300" class="pillar-card text-center bg-white/50 p-6 rounded-xl">
+                        <div class="bg-violet-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border-2 border-violet-300">
+                           <svg class="w-10 h-10 text-violet-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                           </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-800">Código Limpo e Eficiente</h3>
+                        <p class="text-muted mt-2 text-sm">Acreditamos que um bom código é a base de um ótimo produto. Construímos sistemas escaláveis, seguros e fáceis de manter.</p>
+                    </div>
+                     <div data-aos="fade-up" data-aos-delay="400" class="pillar-card text-center bg-white/50 p-6 rounded-xl">
+                        <div class="bg-violet-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border-2 border-violet-300">
+                            <svg class="w-10 h-10 text-violet-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m-7.5-2.962a3.75 3.75 0 015.968.08l.008.016a3.75 3.75 0 01-5.968-.08l-.008-.016zM12 16.5a3.75 3.75 0 01-3.75-3.75V6.75A3.75 3.75 0 0112 3c1.268 0 2.39.63 3.068 1.575a3.75 3.75 0 01-5.968-.08l-.008-.016a3.75 3.75 0 015.968.08l.008.016a3.75 3.75 0 01-5.968.08l-.008-.016z" />
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold text-indigo-800">Parceria e Transparência</h3>
+                        <p class="text-muted mt-2 text-sm">Trabalhamos ao seu lado. A comunicação clara e a colaboração são fundamentais para garantir que o resultado final seja exatamente o que você imaginou.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-20 px-4 md:px-8">
+            <div class="container mx-auto text-center">
+                <h2 data-aos="zoom-in" class="font-bold mb-12">Os Nossos Diferenciais</h2>
+                <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                    <div data-aos="zoom-in" data-aos-delay="100" class="diferencial-card text-center">
+                        <div
+                            class="bg-violet-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border-2 border-violet-300">
+                            <svg class="w-10 h-10 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-indigo-800">Agilidade e Foco</h3>
+                        <p class="text-muted">Como uma equipa pequena, garantimos comunicação direta e agilidade máxima
+                            na entrega do seu projeto.</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="200" class="diferencial-card text-center">
+                        <div
+                            class="bg-violet-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border-2 border-violet-300">
+                            <svg class="w-10 h-10 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-indigo-800">Tecnologia Moderna</h3>
+                        <p class="text-muted">Utilizamos as ferramentas mais recentes e eficientes para construir
+                            soluções rápidas e seguras.</p>
+                    </div>
+                    <div data-aos="zoom-in" data-aos-delay="300" class="diferencial-card text-center">
+                        <div
+                            class="bg-violet-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4 border-2 border-violet-300">
+                            <svg class="w-10 h-10 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V4a2 2 0 012-2h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293H17z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2 text-indigo-800">Parceria Direta</h3>
+                        <p class="text-muted">Você conversa diretamente com os fundadores, garantindo que a sua visão seja
+                            compreendida e executada.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="simulador" class="py-20 px-4 md:px-8">
+            <div class="container mx-auto max-w-4xl" data-aos="zoom-in">
+                <div class="text-center mb-12">
+                    <h2 class="font-bold">Solicite um Orçamento Personalizado</h2>
+                    <p class="text-muted mt-2">Selecione os serviços que lhe interessam e preencha os seus dados. A nossa equipa entrará em contacto com uma proposta detalhada.</p>
+                </div>
+                
+
+                <div id="budget-simulator" class="bg-white p-8 rounded-lg shadow-lg border border-violet-100">
+                    <div class="budget-section">
+                        <h3 class="font-bold text-xl mb-4 text-violet-700">1. Serviços de Desenvolvimento de Site</h3>
+                        <div class="space-y-3 mb-6">
+                            <label class="flex items-center space-x-3 p-3 rounded hover:bg-violet-50 cursor-pointer border border-violet-200">
+                                <input type="checkbox" name="site_type" data-label="Landing Page (Página Única)" class="form-radio h-5 w-5 text-violet-600 focus:ring-violet-500">
+                                <span>Landing Page (Página Única)</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 rounded hover:bg-violet-50 cursor-pointer border border-violet-200">
+                                <input type="checkbox" name="site_type" data-label="Site Institucional (Até 5 páginas)" class="form-radio h-5 w-5 text-violet-600 focus:ring-violet-500">
+                                <span>Site Institucional (Até 5 páginas)</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-3 rounded hover:bg-violet-50 cursor-pointer border border-violet-200">
+                                <input type="checkbox" name="site_type" data-label="E-commerce (Loja Virtual)" class="form-radio h-5 w-5 text-violet-600 focus:ring-violet-500">
+                                <span>E-commerce (Loja Virtual)</span>
+                            </label>
+                        </div>
+                        <h4 class="font-semibold text-lg mt-6 mb-4 text-violet-700">Funcionalidades Adicionais:</h4>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <label class="flex items-center space-x-3 p-2 rounded hover:bg-violet-50 cursor-pointer">
+                                <input type="checkbox" data-label="Sistema de Agendamento Online" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500">
+                                <span>Sistema de Agendamento Online</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-2 rounded hover:bg-violet-50 cursor-pointer">
+                                <input type="checkbox" data-label="Área de Membros com Login/Senha" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500">
+                                <span>Área de Membros com Login/Senha</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-2 rounded hover:bg-violet-50 cursor-pointer">
+                                <input type="checkbox" data-label="Blog com gestor de conteúdo" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500">
+                                <span>Blog com gestor de conteúdo</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-2 rounded hover:bg-violet-50 cursor-pointer">
+                                <input type="checkbox" data-label="Integração com WhatsApp/Chat Online" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500">
+                                <span>Integração com WhatsApp/Chat Online</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-2 rounded hover:bg-violet-50 cursor-pointer">
+                                <input type="checkbox" data-label="Otimização SEO Avançada" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500">
+                                <span>Otimização SEO Avançada</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="budget-section">
+                        <h3 class="font-bold text-xl mb-4 text-violet-700">2. Serviços de Design</h3>
+                        <div class="space-y-3">
+                            <label class="flex items-center space-x-3 p-2 rounded hover:bg-violet-50 cursor-pointer">
+                                <input type="checkbox" data-label="Criação de Logo" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500">
+                                <span>Criação de Logo</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-2 rounded hover:bg-violet-50 cursor-pointer">
+                                <input type="checkbox" data-label="Identidade Visual Completa" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500">
+                                <span>Identidade Visual Completa</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-2 rounded hover:bg-violet-50 cursor-pointer">
+                                <input type="checkbox" data-label="Design para Redes Sociais (Pacote Mensal)" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500">
+                                <span>Design para Redes Sociais (Pacote Mensal)</span>
+                            </label>
+                            <label class="flex items-center space-x-3 p-2 rounded hover:bg-violet-50 cursor-pointer">
+                                <input type="checkbox" data-label="UI/UX Design para Aplicação/Software" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500">
+                                <span>UI/UX Design para Aplicação/Software</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="budget-section">
+                        <h3 class="font-bold text-xl mb-4 text-violet-700">3. Automação de Redes Sociais</h3>
+                        <div class="space-y-3">
+                            <div class="p-3 rounded border border-violet-200 hover:bg-violet-50">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" name="automation_level" data-price="300" data-label="Automação Básica" class="form-radio h-5 w-5 text-violet-600 focus:ring-violet-500">
+                                    <span>Automação Básica</span>
+                                </label>
+                                <label class="flex items-center space-x-3 mt-2 ml-8 cursor-pointer">
+                                    <input type="checkbox" name="automation_maintenance" data-parent-value="300" data-label="Manutenção mensal para Automação Básica" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500" disabled>
+                                    <span>Incluir manutenção mensal</span>
+                                </label>
+                            </div>
+                            <div class="p-3 rounded border border-violet-200 hover:bg-violet-50">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" name="automation_level" data-price="600" data-label="Automação Intermédia" class="form-radio h-5 w-5 text-violet-600 focus:ring-violet-500">
+                                    <span>Automação Intermédia</span>
+                                </label>
+                                <label class="flex items-center space-x-3 mt-2 ml-8 cursor-pointer">
+                                    <input type="checkbox" name="automation_maintenance" data-parent-value="600" data-label="Manutenção mensal para Automação Intermédia" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500" disabled>
+                                    <span>Incluir manutenção mensal</span>
+                                </label>
+                            </div>
+                            <div class="p-3 rounded border border-violet-200 hover:bg-violet-50">
+                                <label class="flex items-center space-x-3 cursor-pointer">
+                                    <input type="checkbox" name="automation_level" data-price="950" data-label="Automação Avançada (Chatbot)" class="form-radio h-5 w-5 text-violet-600 focus:ring-violet-500">
+                                    <span>Automação Avançada (Chatbot)</span>
+                                </label>
+                                <label class="flex items-center space-x-3 mt-2 ml-8 cursor-pointer">
+                                    <input type="checkbox" name="automation_maintenance" data-parent-value="950" data-label="Manutenção mensal para Automação Avançada" class="form-checkbox h-5 w-5 text-violet-600 rounded focus:ring-violet-500" disabled>
+                                    <span>Incluir manutenção mensal</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="https://formspree.io/f/xyzdvvez" method="POST">
+                        <div class="mt-6 space-y-4">
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-muted mb-1 text-left">Seu email:</label>
+                                <input type="email" name="email" id="email" required class="block w-full rounded-md border-gray-300 shadow-sm focus:border-violet-500 focus:ring-violet-500 sm:text-sm p-3">
+                            </div>
+                            <div>
+                            </div>
+                            <input type="hidden" name="servicos_selecionados" id="selected-services">
+                        </div>
+                        
+                        <div class="text-center mt-8">
+                            <button type="submit" class="bg-violet-600 hover:bg-violet-700 text-white font-bold py-3 px-8 rounded-lg transition-colors glow-btn">
+                                Enviar Pedido
+                            </button>
+                        </div>
+                         <div class="text-center mt-4 text-sm text-gray-500">
+                            <p>Iremos analisar o seu pedido e entraremos em contacto com uma proposta detalhada.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulario" class="py-20 px-4 md:px-8 bg-violet-100/50">
+            <div class="container mx-auto max-w-3xl text-center" data-aos="zoom-in">
+                <h2 class="font-bold mb-4">Próximos Passos</h2>
+                <p class="text-lg text-muted mb-8">Pronto para começar? Preencha o nosso formulário de briefing para que possamos entender os detalhes do seu projeto e construir uma proposta personalizada.</p>
+                <a href="#" target="_blank"
+                    class="inline-block bg-gradient-to-r from-violet-500 to-indigo-500 text-white font-bold py-3 px-8 rounded-lg glow-btn">
+                    Preencher Formulário de Briefing
+                </a>
+            </div>
+        </section>
+
+        <section id="instagram" class="py-20 px-4 md:px-8 bg-white overflow-hidden">
+            <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right" class="text-center md:text-left z-10">
+                    <svg class="w-16 h-16 mx-auto md:mx-0 mb-4 text-violet-500 neon-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"></path><path d="M16 5l4 4"></path></svg>
+                    <h2 class="font-bold mb-4">Acompanhe Nosso Trabalho</h2>
+                    <p class="text-lg text-muted mb-8">
+                        Siga-nos no Instagram para ver os bastidores dos nossos projetos, dicas de tecnologia e ficar por dentro de todas as novidades.
+                    </p>
+                    <a href="https://www.instagram.com/tlp.tech" target="_blank"
+                        class="inline-flex items-center justify-center bg-gradient-to-r from-violet-500 to-indigo-500 text-white font-bold py-3 px-8 rounded-lg glow-btn">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.792 2.792c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.792 2.792c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.792-2.792c-.247-.636-.416-1.363-.465-2.427C2.013 14.784 2 14.43 2 12s.013-2.784.06-3.808c.049-1.064.218-1.791.465-2.427A4.902 4.902 0 015.318 2.97c.636-.247 1.363-.416 2.427-.465C8.766 2.013 9.12 2 11.55 2h.766zM12 6.845a5.155 5.155 0 100 10.31 5.155 5.155 0 000-10.31zm0 8.468a3.313 3.313 0 110-6.625 3.313 3.313 0 010 6.625zm6.318-8.91a1.213 1.213 0 10-2.426 0 1.213 1.213 0 002.426 0z" clip-rule="evenodd" /></svg>
+                        Seguir no Instagram
+                    </a>
+                </div>
+                <div data-aos="fade-left" class="phone-container relative flex justify-center items-center h-full min-h-[500px]">
+                    <div class="phone-mockup">
+                        <div class="phone-frame">
+                            <div class="phone-screen">
+                                <img src="/img/WhatsApp Image 2025-09-12 at 13.18.36.jpeg" alt="Preview do site TLP Tech no celular" class="w-full h-full object-cover">
+                            </div>
+                            <div class="phone-camera"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="urgente" class="py-20 px-4 md:px-8 bg-violet-50">
+            <div class="container mx-auto max-w-3xl text-center" data-aos="zoom-in">
+                <h2 class="font-bold mb-4">Tem um Projeto com Prazo Urgente?</h2>
+                <p class="text-lg text-muted mb-8">Sabemos que algumas ideias não podem esperar. Se tem um projeto que precisa de atenção imediata, entre em contato diretamente conosco pelo WhatsApp para uma resposta rápida e focada.</p>
+                <a href="https://api.whatsapp.com/send?phone=5571992935351&text=Ol%C3%A1!%20Tenho%20um%20projeto%20urgente%20e%20gostaria%20de%20conversar."
+                    target="_blank"
+                    class="inline-flex items-center justify-center bg-gradient-to-r from-violet-500 to-indigo-500 text-white font-bold py-3 px-8 rounded-lg glow-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mr-2 h-6 w-6">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81 .7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    Falar no WhatsApp Agora
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white text-indigo-900 py-12 px-4 border-t border-violet-100">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+            <div class="space-y-4">
+                <a href="#inicio" class="inline-block">
+                     <img class="h-32 w-auto mx-auto md:mx-0" 
+                         src="/img/ChatGPT Image 10 de set. de 2025, 21_48_42.png" 
+                         onerror="this.onerror=null;this.src='https://placehold.co/200x80/ffffff/1e1b4b?text=TLP+TECH&font=montserrat';"
+                         alt="logo footer">
+                </a>
+                <p class="text-sm text-muted">
+                    Tecnologia que transforma negócios. Criamos soluções digitais de alto impacto para impulsionar os seus resultados.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-bold text-indigo-800 mb-4">Navegação</h4>
+                <nav class="flex flex-col space-y-2 text-muted">
+                    <a href="#servicos" class="hover:text-violet-600 transition-colors">Serviços</a>
+                    <a href="#sobre" class="hover:text-violet-600 transition-colors">Sobre Nós</a>
+                    <a href="#simulador" class="hover:text-violet-600 transition-colors">Orçamento</a>
+                    <a href="#formulario" class="hover:text-violet-600 transition-colors">Iniciar Projeto</a>
+                </nav>
+            </div>
+            <div>
+                <h4 class="font-bold text-indigo-800 mb-4">Contato & Redes</h4>
+                <div class="space-y-3 text-muted text-sm flex flex-col items-center md:items-start">
+                    
+                    <a href="https://api.whatsapp.com/send?phone=5571992935351" target="_blank" class="flex items-center space-x-2 hover:text-violet-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99 0-3.903-.52-5.586-1.459L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.451-4.437-9.887-9.888-9.888-5.452 0-9.887 4.434-9.889 9.886-.001 2.267.655 4.398 1.803 6.12L4.38 21.219l2.275-1.021z"/></svg>
+                        <span>(71) 99293-5351</span>
+                    </a>
+                    
+                    <a href="mailto:tlp.tech.org@gmail.com" class="flex items-center space-x-2 hover:text-violet-600 transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"/></svg>
+                        <span>tlp.tech.org@gmail.com</span>
+                    </a>
+
+                    <a href="https://www.instagram.com/tlp.tech" target="_blank" class="flex items-center space-x-2 hover:text-violet-600 transition-colors">
+                       <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 012.792 2.792c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-2.792 2.792c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.012-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-2.792-2.792c-.247-.636-.416-1.363-.465-2.427C2.013 14.784 2 14.43 2 12s.013-2.784.06-3.808c.049-1.064.218-1.791.465-2.427A4.902 4.902 0 015.318 2.97c.636-.247 1.363-.416 2.427-.465C8.766 2.013 9.12 2 11.55 2h.766zM12 6.845a5.155 5.155 0 100 10.31 5.155 5.155 0 000-10.31zm0 8.468a3.313 3.313 0 110-6.625 3.313 3.313 0 010 6.625zm6.318-8.91a1.213 1.213 0 10-2.426 0 1.213 1.213 0 002.426 0z" clip-rule="evenodd" /></svg>
+                       <span>@tlp.tech</span>
+                    </a>
+
+                     <div class="flex items-center space-x-2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        <span>Salvador, Bahia, Brasil</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto mt-8 pt-8 border-t border-violet-200 text-center text-sm text-muted">
+            <p>&copy; 2025 TLP TECH. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>
