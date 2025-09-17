@@ -191,3 +191,16 @@ body {
                 display: block;
             }
         }
+        /* =============================================== */
+        /* Estilos para o Carrossel (Swiper.js)            */
+        /* =============================================== */
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #8b5cf6; /* Cor violeta principal do seu site */
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: #8b5cf6 !important; /* Cor da bolinha de paginação ativa */
+        }
+        
